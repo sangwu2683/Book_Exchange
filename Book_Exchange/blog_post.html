@@ -1,0 +1,259 @@
+<!DOCTYPE HTML>
+<html>
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <title>Message Board</title>
+
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="css/grid.css" media="screen" rel="stylesheet" type="text/css">
+
+  <script src="js/jquery-1.7.2.min.js" ></script>
+  <script src="js/html5.js" ></script>
+  <script src="js/jflow.plus.js" ></script>
+  <script src="js/jquery.carouFredSel-5.2.2-packed.js"></script>
+  <script src="js/checkbox.js"></script>
+  <script src="js/radio.js"></script>
+  <script src="js/selectBox.js"></script>
+
+  <script>
+	$(document).ready(function() {
+		$("select").selectBox();
+	});
+  </script>
+
+  <script>
+	$(document).ready(function(){
+		$("#myController").jFlow({
+			controller: ".control", // must be class, use . sign
+			slideWrapper : "#jFlowSlider", // must be id, use # sign
+			slides: "#slider",  // the div where all your sliding divs are nested in
+			selectedWrapper: "jFlowSelected",  // just pure text, no sign
+			width: "984px",  // this is the width for the content-slider
+			height: "480px",  // this is the height for the content-slider
+			duration: 400,  // time in miliseconds to transition one slide
+			prev: ".slidprev", // must be class, use . sign
+			next: ".slidnext", // must be class, use . sign
+			auto: true
+		});
+	});
+  </script>
+  <script>
+	$(function() {
+	  $('#list_product').carouFredSel({
+		prev: '#prev_c1',
+		next: '#next_c1',
+		auto: false
+	  });
+          $('#list_product2').carouFredSel({
+		prev: '#prev_c2',
+		next: '#next_c2',
+		auto: false
+	  });
+	  $('#list_banners').carouFredSel({
+		prev: '#ban_prev',
+		next: '#ban_next',
+		scroll: 1,
+		auto: false
+	  });
+	  $(window).resize();
+	});
+  </script>
+  <script>
+       $(document).ready(function(){
+	      $("button").click(function(){
+		     $(this).addClass('click')
+	      });
+       })
+  </script>
+
+</head>
+<body>
+
+<!--This is Logo.-->
+
+<div class="container_12">
+    <header id="branding">
+        <div class="grid_3">
+            <hgroup>
+                <h1 id="site_logo" ><a href="index.html" title="">Bxchange</a></h1>
+                <h2 id="site_description"></h2>
+            </hgroup>
+        </div><!-- .grid_3 -->
+
+<!--This is Search.-->
+
+        <div class="grid_3">
+            <form class="search">
+                <input type="text" name="search" class="entry_form" value="" placeholder="search"/>
+            </form>
+        </div><!-- .grid_3 -->
+
+        
+    </header><!-- #branding -->
+</div><!-- .container_12 -->
+
+<!--This is Navigation.-->
+
+<div class="clear"></div>
+
+<div id="block_nav_primary">
+    <div class="container_12">
+      <div class="grid_12">
+        <nav class="primary">
+          <ul>
+            <li><a href="index.html">Main Page</a></li>
+            <li><a href="catalog_grid.html">All Books</a></li>
+            
+              <li>
+                  <a href="catalog_grid.html">University Exchange</a>
+                  <ul class="sub">
+                      <li><a href="catalog_grid.html">University of Manchester</a></li>
+                      <li><a href="catalog_grid.html">University of Cambridge</a></li>
+                      <li><a href="catalog_grid.html">University of Oxford</a></li>
+                      <li><a href="catalog_grid.html">University of Warwick</a></li>
+                      <li><a href="catalog_grid.html">Imperial College London</a></li>
+                      <li><a href="catalog_grid.html">Durham University</a></li>
+                      <li><a href="catalog_grid.html">University of Leeds</a></li>
+                      <li><a href="catalog_grid.html">University of Bath</a></li>
+                  </ul>
+              </li>
+              <li><a href="sale.html">Sale old books</a></li>
+              <li class="curent">
+              <a href="blog_post.html">Message Board</a>
+            </li>
+          </ul>
+        </nav><!-- .primary -->
+      </div><!-- .grid_12 -->
+    </div><!-- .container_12 -->
+  </div><!-- .block_nav_primary -->
+
+<!--This is Message Board.-->
+
+<div class="clear"></div>
+
+
+  <div class="container_12">
+    <div class="grid_12">
+       <div class="breadcrumbs">
+	      <a href="index.html">Main Page</a><span>&#8250;</span><span class="current">Message Board</span>
+       </div><!-- .breadcrumbs -->
+    </div><!-- .grid_12 -->
+  </div><!-- .container_12 -->
+
+  <div class="clear"></div>
+
+  <section id="response">
+    <div class="container_12">
+       <div id="content" class="grid_9">
+		<div class="comments_blog">
+			<h4>Message Board</h4>
+			<ul class="comments">
+				<li>
+					<div class="avatar"><img src="images/avatar.png" alt="Avatar"/></div>
+					<div class="autor">John</div>, <time datetime="2012-11-03">03.04.2018</time>
+					<p>Great second-hand book website! I can get textbooks in low prices here. Hope there will be more books and customers.</p>
+				</li>
+
+				<li>
+					<div class="avatar"><img src="images/avatar.png" alt="Avatar"/></div>
+					<div class="autor">Mike</div>, <time datetime="2012-11-03">03.04.2018</time>
+					<p>I really like the design of website, I found the English grammar book I need here. So surprice for the price, thank you.</p>
+				</li>
+                <li>
+                    <div class="avatar"><img src="images/avatar.png" alt="Avatar"/></div>
+                    <div class="autor">Nikki</div>, <time datetime="2012-11-03">03.11.2012</time>
+                    <p>It's a good flatform for me, because I can sale my used books here and get some money.</p>
+                </li>
+			</ul><!-- .comments -->
+		</div><!-- .comments_blog -->
+
+<!--This is Message Addition.-->
+
+		<form class="add_comments">
+			<h4>Add Message</h4>
+
+			<div class="nickname">
+				<strong>Nickname</strong><sup class="surely">*</sup><br/>
+				<input type="text" name="" class="" value="" />
+			</div><!-- .nickname -->
+            <div class="clear"></div>
+			<div class="text_review">
+				<strong>Message</strong><br/>
+				<textarea name="text" placeholder="Please write your contents here"></textarea>
+			</div><!-- .text_review -->
+
+			<input type="submit" value="Submit" />
+		</form><!-- .add_comments -->
+
+       </div><!-- #content -->
+
+      <div class="clear"></div>
+
+    </div><!-- .container_12 -->
+  </section><!-- #main -->
+
+  <div class="clear"></div>
+
+
+<!--This is Service Guide in the footer.-->
+
+<footer>
+    <div class="f_navigation">
+      <div class="container_12">
+        <div class="grid_3">
+          <h3>Purchase Guide</h3>
+          <ul class="f_contact">
+            <li>How can I return the book?</li>
+            <li>How can I become a member?</li>
+            <li>How long would the book arrive?</li>
+          </ul><!-- .f_contact -->
+        </div><!-- .grid_3 -->
+
+        <div class="grid_3">
+          <h3>After-sales Service</h3>
+          <nav class="f_menu">
+            <ul>
+              <li><a href="#">Refund/changing notes</a></li>
+              <li><a href="#">No return instructions</a></li>
+              <li><a href="#">After-sales service process</a></li>
+            </ul>
+          </nav><!-- .private -->
+        </div><!-- .grid_3 -->
+
+        <div class="grid_3">
+          <h3>Payment Methods</h3>
+          <nav class="f_menu">
+            <ul>
+              <li><a href="contact_us.html">What are the payment methods?</a></li>
+              <li><a href="#">How can I pay for books?</a></li>
+              <li><a href="#">Payment Process</a></li>
+            </ul>
+          </nav><!-- .private -->
+        </div><!-- .grid_3 -->
+
+        <div class="grid_3">
+          <h3>Help</h3>
+          <nav class="f_menu">
+            <ul>
+              <li><a href="#">Used book description</a></li>
+              <li><a href="#">Privacy security</a></li>
+            </ul>
+          </nav><!-- .private -->
+        </div><!-- .grid_3 -->
+
+        <div class="clear"></div>
+      </div><!-- .container_12 -->
+    </div><!-- .f_navigation -->
+
+
+  </footer>
+
+</body>
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+</html>

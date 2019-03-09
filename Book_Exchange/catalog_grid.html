@@ -1,0 +1,528 @@
+<!DOCTYPE HTML>
+<html>
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <title>All Books</title>
+
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="css/grid.css" media="screen" rel="stylesheet" type="text/css">
+ 
+  <script src="js/jquery-1.7.2.min.js" ></script>
+  <script src="js/html5.js" ></script>
+  <script src="js/jflow.plus.js" ></script>
+  <script src="js/jquery.carouFredSel-5.2.2-packed.js"></script>
+  <script src="js/checkbox.js"></script>
+  <script src="js/radio.js"></script>
+  <script src="js/selectBox.js"></script>
+
+  <script>
+	$(document).ready(function() {
+        $("select").selectBox();
+	});
+  </script>
+
+  <script>
+      $(document).ready(function(){
+          $("#myController").jFlow({
+			controller: ".control", // must be class, use . sign
+			slideWrapper : "#jFlowSlider", // must be id, use # sign
+			slides: "#slider",  // the div where all your sliding divs are nested in
+			selectedWrapper: "jFlowSelected",  // just pure text, no sign
+			width: "984px",  // this is the width for the content-slider
+			height: "480px",  // this is the height for the content-slider
+			duration: 400,  // time in miliseconds to transition one slide
+			prev: ".slidprev", // must be class, use . sign
+			next: ".slidnext", // must be class, use . sign
+			auto: true	
+		 });
+	});
+   </script>
+   <script>
+       $(function() {
+           $('#list_product').carouFredSel({
+		prev: '#prev_c1',
+		next: '#next_c1',
+		auto: false
+	  });
+           $('#list_product2').carouFredSel({
+		prev: '#prev_c2',
+		next: '#next_c2',
+		auto: false
+	  });
+           $(window).resize();
+	});
+   </script>
+   <script>
+       $(document).ready(function(){
+           $("button").click(function(){
+               $(this).addClass('click')
+	      });             
+       })
+  </script>
+    
+</head>
+<body>
+
+<!--This is Logo.-->
+
+<div class="container_12">
+    <header id="branding">
+        <div class="grid_3">
+            <hgroup>
+                <h1 id="site_logo" ><a href="index.html" title="">Bxchange</a></h1>
+                <h2 id="site_description"></h2>
+            </hgroup>
+        </div><!-- .grid_3 -->
+
+<!--This is Search.-->
+
+        <div class="grid_3">
+            <form class="search">
+                <input type="text" name="search" class="entry_form" value="" placeholder="search"/>
+            </form>
+        </div><!-- .grid_3 -->
+
+        
+    </header><!-- #branding -->
+</div><!-- .container_12 -->
+
+<!--This is Navigation.-->
+
+<div class="clear"></div>
+
+<div id="block_nav_primary">
+    <div class="container_12">
+      <div class="grid_12">
+        <nav class="primary">
+          <ul>
+            <li><a href="index.html">Main Page</a></li>
+            <li class="curent"><a href="catalog_grid.html">All Books</a></li>
+            
+              <li>
+                  <a href="catalog_grid.html">University Exchange</a>
+                  <ul class="sub">
+                      <li><a href="catalog_grid.html">University of Manchester</a></li>
+                      <li><a href="catalog_grid.html">University of Cambridge</a></li>
+                      <li><a href="catalog_grid.html">University of Oxford</a></li>
+                      <li><a href="catalog_grid.html">University of Warwick</a></li>
+                      <li><a href="catalog_grid.html">Imperial College London</a></li>
+                      <li><a href="catalog_grid.html">Durham University</a></li>
+                      <li><a href="catalog_grid.html">University of Leeds</a></li>
+                      <li><a href="catalog_grid.html">University of Bath</a></li>
+                  </ul>
+              </li>
+              <li><a href="sale.html">Sale old books</a></li>
+              <li>
+              <a href="blog_post.html">Message Board</a>
+            </li>
+          </ul>
+        </nav><!-- .primary -->
+      </div><!-- .grid_12 -->
+    </div><!-- .container_12 -->
+  </div><!-- .block_nav_primary -->
+
+<div class="clear"></div>
+
+  
+  <div class="container_12">
+    <div class="grid_12">
+       <div class="breadcrumbs">
+	      <a href="index.html">Main page</a><span>&#8250;</span><span class="current">All Books</span>
+       </div><!-- .breadcrumbs -->
+    </div><!-- .grid_12 -->
+  </div><!-- .container_12 -->
+  
+<!--This is Book Classifiction in the left.-->
+
+  <div class="clear"></div>
+  
+  <section id="main">
+    <div class="container_12">
+       <div id="sidebar" class="grid_3">
+	      <aside id="categories_nav">
+		     <h3>Book classification</h3>
+		     
+		     <nav class="left_menu">
+			    <ul>
+				   <li><a href="#">Novels <span>(21)</span></a></li>
+                       <li><a href="#">Literature <span> (27)</span></a></li>
+                       <li><a href="#">History <span>(33)</span></a></li>
+                       <li><a href="#">Geography <span>(17)</span></a></li>
+                       <li><a href="#">Law<span>(23)</span></a></li>
+                       <li><a href="#">Military<span>(7)</span></a></li>
+                       <li><a href="#">Economy<span>(7)</span></a></li>
+                       <li><a href="#">Management<span>(7)</span></a></li>
+                       <li><a href="#">Art<span>(7)</span></a></li>
+                       <li><a href="#">Life<span>(7)</span></a></li>
+                       <li class="last"><a href="#">Others <span>(135)</span></a></li>
+			    </ul>
+		     </nav><!-- .left_menu -->
+	      </aside><!-- #categories_nav -->
+	      
+<!--This is Popular Books List in the side.-->
+
+	      <aside id="specials" class="specials">
+		     <h3>Popular Books</h3>
+		     
+		     <ul>
+			    <li>
+				   <div class="prev">
+					  <a href="product_page.html"><img src="images/special1.png" alt="" title="" /></a>
+				   </div>
+				   
+				   <div class="cont">
+					  <a href="product_page.html">International Law</a>
+					  <div class="prise"><span class="old">&pound;17.00</span>&pound;75.00</div>
+				   </div>   
+			    </li>
+			    
+			    <li>
+				   <div class="prev">
+					  <a href="product_page.html"><img src="images/special2.png" alt="" title="" /></a>
+				   </div>
+				   
+				   <div class="cont">
+					  <a href="product_page.html">University Physics</a>
+					  <div class="prise"><span class="old">&pound;17.00</span>&pound;60.00</div>
+				   </div>   
+			    </li>
+		     </ul>
+	      </aside><!-- #specials -->
+	      
+
+       </div><!-- .sidebar -->
+      
+<!--This is All Books List.-->
+
+       <div id="content" class="grid_9">
+	      <h1 class="page_title">Book List</h1>
+	      
+	      <div class="options">
+
+<!--This is Sort and Selection.-->
+		     
+		     <div class="sort">
+			   Sort
+			    <select>
+				   <option>Distance</option>
+				   <option>Price</option>
+				   <option>Score</option>
+				   <option>Title</option>
+			     </select>
+		     </div><!-- .sort -->
+	      </div><!-- .options -->
+	      
+	      <div class="grid_product">
+		     <div class="grid_3 product">
+			    <div class="prev">
+				   <a href="product_page.html"><img src="images/product_1.png" alt="" title="" /></a>
+			    </div><!-- .prev -->
+			    <h3 class="title">Knowledge Management in Organizations</h3>
+			    <div class="cart">
+				   <div class="price">
+					  <div class="vert">
+						 <div class="price_new">&pound;18.00</div>
+						 <div class="price_old">&pound;65.00</div>
+					  </div>
+				   </div>
+				   <a href="#" class="obn"></a>
+				   <a href="#" class="like"></a>
+				   <a href="#" class="bay"></a>
+			    </div><!-- .cart -->
+		     </div><!-- .grid_3 -->
+		     
+		     <div class="grid_3 product">
+			    <img class="sale" src="images/sale.png" alt="Sale"/>
+			    <div class="prev">
+				   <a href="product_page.html"><img src="images/product_2.png" alt="" title="" /></a>
+			    </div><!-- .prev -->
+			    <h3 class="title">Bridging the Gap to University Mathematics</h3>
+			    <div class="cart">
+				   <div class="price">
+					  <div class="vert">
+						 <div class="price_new">&pound;5.00</div>
+						 <div class="price_old">&pound;45.00</div>
+					  </div>
+				   </div>
+				   <a href="#" class="obn"></a>
+				   <a href="#" class="like"></a>
+				   <a href="#" class="bay"></a>
+			    </div><!-- .cart -->
+		     </div><!-- .grid_3 -->
+		     
+		     <div class="grid_3 product">
+			    <img class="sale" src="images/new.png" alt="New"/>
+			    <div class="prev">
+				   <a href="product_page.html"><img src="images/product_3.png" alt="" title="" /></a>
+			    </div><!-- .prev -->
+			    <h3 class="title">University Physics</h3>
+			    <div class="cart">
+				   <div class="price">
+					  <div class="vert">
+						 <div class="price_new">&pound;14.00</div>
+						 <div class="price_old">&pound;75.00</div>
+					  </div>
+				   </div>
+				   <a href="#" class="obn"></a>
+				   <a href="#" class="like"></a>
+				   <a href="#" class="bay"></a>
+			    </div><!-- .cart -->
+		     </div><!-- .grid_3 -->
+		     
+		     <div class="grid_3 product">
+			    <img class="sale" src="images/top.png" alt="Top"/>
+			    <div class="prev">
+				   <a href="product_page.html"><img src="images/product_4.png" alt="" title="" /></a>
+			    </div><!-- .prev -->
+			    <h3 class="title">Health Psychology</h3>
+			    <div class="cart">
+				   <div class="price">
+					  <div class="vert">
+						 <div class="price_new">&pound;20.00</div>
+						 <div class="price_old">&pound;75.00</div>
+					  </div>
+				   </div>
+				   <a href="#" class="obn"></a>
+				   <a href="#" class="like"></a>
+				   <a href="#" class="bay"></a>
+			    </div><!-- .cart -->
+		     </div><!-- .grid_3 -->
+		     
+		     <div class="grid_3 product">
+			    <div class="prev">
+				   <a href="product_page.html"><img src="images/product_5.png" alt="" title="" /></a>
+			    </div><!-- .prev -->
+			    <h3 class="title">Geography</h3>
+			    <div class="cart">
+				   <div class="price">
+					  <div class="vert">
+						 <div class="price_new">&pound;30.00</div>
+						 <div class="price_old">&pound;95.00</div>
+					  </div>
+				   </div>
+				   <a href="#" class="obn"></a>
+				   <a href="#" class="like"></a>
+				   <a href="#" class="bay"></a>
+			    </div><!-- .cart -->
+		     </div><!-- .grid_3 -->
+		     
+		     <div class="grid_3 product">
+			    <div class="prev">
+				   <a href="product_page.html"><img src="images/product_6.png" alt="" title="" /></a>
+			    </div><!-- .prev -->
+			    <h3 class="title">English Grammar in Use</h3>
+			    <div class="cart">
+				   <div class="price">
+					  <div class="vert">
+						 <div class="price_new">&pound;15.00</div>
+						 <div class="price_old">&pound;76.00</div>
+					  </div>
+				   </div>
+				   <a href="#" class="obn"></a>
+				   <a href="#" class="like"></a>
+				   <a href="#" class="bay"></a>
+			    </div><!-- .cart -->
+		     </div><!-- .grid_3 -->
+		     
+		     <div class="grid_3 product">
+			    <img class="sale" src="images/sale.png" alt="Sale"/>
+			    <div class="prev">
+				   <a href="product_page.html"><img src="images/product_7.png" alt="" title="" /></a>
+			    </div><!-- .prev -->
+			    <h3 class="title">Employment Law</h3>
+			    <div class="cart">
+				   <div class="price">
+					  <div class="vert">
+						 <div class="price_new">&pound;23.00</div>
+						 <div class="price_old">&pound;75.00</div>
+					  </div>
+				   </div>
+				   <a href="#" class="obn"></a>
+				   <a href="#" class="like"></a>
+				   <a href="#" class="bay"></a>
+			    </div><!-- .cart -->
+		     </div><!-- .grid_3 -->
+		     
+		     <div class="grid_3 product">
+			    <img class="sale" src="images/top.png" alt="Top"/>
+			    <div class="prev">
+				   <a href="product_page.html"><img src="images/produkt_slid1.png" alt="" title="" /></a>
+			    </div><!-- .prev -->
+			    <h3 class="title">Work and Health Psychology</h3>
+			    <div class="cart">
+				   <div class="price">
+					  <div class="vert">
+						 <div class="price_new">&pound;12.00</div>
+						 <div class="price_old">&pound;75.00</div>
+					  </div>
+				   </div>
+				   <a href="#" class="obn"></a>
+				   <a href="#" class="like"></a>
+				   <a href="#" class="bay"></a>
+			    </div><!-- .cart -->
+		     </div><!-- .grid_3 -->
+		     
+		     <div class="grid_3 product">
+			    <img class="sale" src="images/new.png" alt="New"/>
+			    <div class="prev">
+				   <a href="product_page.html"><img src="images/product_2.png" alt="" title="" /></a>
+			    </div><!-- .prev -->
+			    <h3 class="title">Bridging the Gap to University Mathematics</h3>
+			    <div class="cart">
+				   <div class="price">
+					  <div class="vert">
+						 <div class="price_new">&pound;12.00</div>
+						 <div class="price_old">&pound;75.00</div>
+					  </div>
+				   </div>
+				   <a href="#" class="obn"></a>
+				   <a href="#" class="like"></a>
+				   <a href="#" class="bay"></a>
+			    </div><!-- .cart -->
+		     </div><!-- .grid_3 -->
+		     
+		     <div class="grid_3 product">
+			    <div class="prev">
+				   <a href="product_page.html"><img src="images/product_8.png" alt="" title="" /></a>
+			    </div><!-- .prev -->
+			    <h3 class="title">Dictionary of Astronomy</h3>
+			    <div class="cart">
+				   <div class="price">
+					  <div class="vert">
+						 <div class="price_new">&pound;12.00</div>
+						 <div class="price_old">&pound;75.00</div>
+					  </div>
+				   </div>
+				   <a href="#" class="obn"></a>
+				   <a href="#" class="like"></a>
+				   <a href="#" class="bay"></a>
+			    </div><!-- .cart -->
+		     </div><!-- .grid_3 -->
+		     
+		     <div class="grid_3 product">
+			    <img class="sale" src="images/sale.png" alt="Sale"/>
+			    <div class="prev">
+				   <a href="product_page.html"><img src="images/product_9.png" alt="" title="" /></a>
+			    </div><!-- .prev -->
+			    <h3 class="title">Contract Law</h3>
+			    <div class="cart">
+				   <div class="price">
+					  <div class="vert">
+						 <div class="price_new">&pound;14.00</div>
+						 <div class="price_old">&pound;69.00</div>
+					  </div>
+				   </div>
+				   <a href="#" class="obn"></a>
+				   <a href="#" class="like"></a>
+				   <a href="#" class="bay"></a>
+			    </div><!-- .cart -->
+		     </div><!-- .grid_3 -->
+		     
+		     <div class="grid_3 product">
+			    <img class="sale" src="images/new.png" alt="New"/>
+			    <div class="prev">
+				   <a href="product_page.html"><img src="images/product_10.png" alt="" title="" /></a>
+			    </div><!-- .prev -->
+			    <h3 class="title">Neurosciences</h3>
+			    <div class="cart">
+				   <div class="price">
+					  <div class="vert">
+						 <div class="price_new">&pound;14.00</div>
+						 <div class="price_old">&pound;69.00</div>
+					  </div>
+				   </div>
+				   <a href="#" class="obn"></a>
+				   <a href="#" class="like"></a>
+				   <a href="#" class="bay"></a>
+			    </div><!-- .cart -->
+		     </div><!-- .grid_3 -->
+	    
+	      <div class="clear"></div>
+	      </div><!-- .grid_product -->
+	      
+	      <div class="clear"></div>
+	      
+	      <div class="pagination">
+		     <ul>
+			    <li class="prev"><span>&#8592;</span></li>
+			    <li class="curent"><a href="#">1</a></li>
+			    <li><a href="#">2</a></li>
+			    <li><a href="#">3</a></li>
+			    <li><a href="#">4</a></li>
+			    <li><a href="#">5</a></li>
+			    <li><span>...</span></li>
+			    <li><a href="#">100</a></li>
+			    <li class="next"><a href="#">&#8594;</a></li>
+		     </ul>
+	      </div><!-- .pagination -->
+       </div><!-- #content -->
+       
+      <div class="clear"></div>
+      
+    </div><!-- .container_12 -->
+  </section><!-- #main -->
+  
+  <div class="clear"></div>
+
+<!--This is Service Guide in the footer.-->
+
+<footer>
+    <div class="f_navigation">
+      <div class="container_12">
+        <div class="grid_3">
+          <h3>Purchase Guide</h3>
+          <ul class="f_contact">
+            <li>How can I return the book?</li>
+            <li>How can I become a member?</li>
+            <li>How long would the book arrive?</li>
+          </ul><!-- .f_contact -->
+        </div><!-- .grid_3 -->
+
+        <div class="grid_3">
+          <h3>After-sales Service</h3>
+          <nav class="f_menu">
+            <ul>
+              <li><a href="#">Refund/changing notes</a></li>
+              <li><a href="#">No return instructions</a></li>
+              <li><a href="#">After-sales service process</a></li>
+            </ul>
+          </nav><!-- .private -->
+        </div><!-- .grid_3 -->
+
+        <div class="grid_3">
+          <h3>Payment Methods</h3>
+          <nav class="f_menu">
+            <ul>
+              <li><a href="contact_us.html">What are the payment methods?</a></li>
+              <li><a href="#">How can I pay for books?</a></li>
+              <li><a href="#">Payment Process</a></li>
+            </ul>
+          </nav><!-- .private -->
+        </div><!-- .grid_3 -->
+
+        <div class="grid_3">
+          <h3>Help</h3>
+          <nav class="f_menu">
+            <ul>
+              <li><a href="#">Used book description</a></li>
+              <li><a href="#">Privacy security</a></li>
+            </ul>
+          </nav><!-- .private -->
+        </div><!-- .grid_3 -->
+
+        <div class="clear"></div>
+      </div><!-- .container_12 -->
+    </div><!-- .f_navigation -->
+
+
+  </footer>
+ 
+</body>
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+</html>
